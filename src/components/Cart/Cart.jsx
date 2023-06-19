@@ -26,6 +26,16 @@ const Cart = (props) => {
     setIsCheckout(true);
   }
 
+  const sumbitOrderHandler = (userData) => {
+    fetch('https://react-meals-f5e37-default-rtdb.firebaseio.com/orders.json', {
+      method: 'POST',
+      body: JSON.stringify({
+        user: userData,
+        orderdItems: cartCtx.items
+      })
+    });
+  }
+
   const modalActions = (
     <div className={classes.actions}>
       <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
@@ -55,7 +65,7 @@ const Cart = (props) => {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      {isCheckout && <Checkout onCancel={props.onClose}/>}
+      {isCheckout && <Checkout onConfirm={sumbitOrderHandler} onCancel={props.onClose} />}
       {!isCheckout && modalActions}
     </Modal>
   )
