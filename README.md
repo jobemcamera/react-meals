@@ -2,9 +2,11 @@
 
 React Meals é a uma plataforma de Delivery de Comida construída em React. Foi o projeto do treinamento de React do desenvolvedor [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/). 
 
+Para acessar o deploy da aplicação: [React Meals](https://react-meals-hazel.vercel.app/)
+
 ## O Projeto
 
-O intuíto deste projeto foi desenvolver uma aplicação em React que utilizasse diversos conceitos da biblioteca. O principal objetivo foi mostrar como uma aplicação real de alto nível é construída em React.
+O intuíto deste projeto foi desenvolver uma aplicação em React que utilizasse diversos conceitos da biblioteca. O principal objetivo foi mostrar como uma aplicação real de alto nível é construída em React. 
 
 Na tela inicial, podemos ver a lista de refeições que são puxadas diretamente do banco de dados Firebase. Ao clicar em ```+ Add``` de qualquer refeição, o carrinho de pedidos ser preenchido com o item e a quantidade do pedido. Cada pedido pode ser feito a 1 à 5 itens por vez.
 
