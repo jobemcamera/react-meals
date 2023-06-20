@@ -31,10 +31,10 @@ Neste projeto, passamos por diversos conceitos do React:
 - Fetch (POST e GET);
 - Formulário em React;
 -  Hooks;
-  - useState;
-  - useReducer;
-  - useContext;
-  - useRef;
+    - useState;
+    - useReducer;
+    - useContext;
+    - useRef;
 - React.createContext;
 - ReactDOM.createPoral;
 - Prop drilling;
